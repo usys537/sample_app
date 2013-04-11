@@ -25,7 +25,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.2.3'
 end
 
 gem 'jquery-rails'
@@ -33,6 +33,8 @@ gem 'jquery-rails'
 group :test do
 	gem 'capybara', '2.0.2'
 	gem 'factory_girl_rails', '4.2.0'
+	gem 'cucumber-rails', '1.2.1', :require => false
+ 	gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
